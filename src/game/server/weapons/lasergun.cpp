@@ -5,9 +5,9 @@
 CLaserGun::CLaserGun(CCharacter *pOwnerChar) :
 	CWeapon(pOwnerChar)
 {
-	m_MaxAmmo = g_pData->m_Weapons.m_aId[WEAPON_LASER].m_Maxammo;
-	m_AmmoRegenTime = g_pData->m_Weapons.m_aId[WEAPON_LASER].m_Ammoregentime;
-	m_FireDelay = g_pData->m_Weapons.m_aId[WEAPON_LASER].m_Firedelay;
+	m_MaxAmmo = 20;
+	m_AmmoRegenTime = 1000;
+	m_FireDelay = 150;
 	m_FullAuto = true;
 }
 
