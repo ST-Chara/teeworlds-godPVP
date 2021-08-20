@@ -7,12 +7,13 @@ CNinja::CNinja(CCharacter *pOwnerChar) :
 {
 	m_MaxAmmo = g_pData->m_Weapons.m_aId[WEAPON_NINJA].m_Maxammo;
 	m_AmmoRegenTime = g_pData->m_Weapons.m_aId[WEAPON_NINJA].m_Ammoregentime;
-	m_FireDelay = g_pData->m_Weapons.m_aId[WEAPON_NINJA].m_Firedelay;
+	m_FireDelay = 0;
 	m_OldVelAmount = 0;
 	m_CurrentMoveTime = -1;
 	m_ActivationDir = vec2(0, 0);
 	m_NumObjectsHit = 0;
 	m_Duration = g_pData->m_Weapons.m_Ninja.m_Duration;
+	m_FullAuto = true;
 }
 
 void CNinja::Fire(vec2 Direction)
