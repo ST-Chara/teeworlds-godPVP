@@ -5,10 +5,9 @@
 CLaserGun::CLaserGun(CCharacter *pOwnerChar) :
 	CWeapon(pOwnerChar)
 {
-	m_MaxAmmo = 1000;
+	m_MaxAmmo = 800;
 	m_AmmoRegenTime = 5;
 	m_FireDelay = 5;
-	GameServer()->Tuning()->m_LaserReach, m_pPlayer->GetCID());
 	m_FullAuto = true;
 }
 
@@ -37,7 +36,7 @@ void CLaserGun::Fire(vec2 Direction)
 		ClientID, //Owner
 		Pos(), //Pos
 		Direction, //Dir
-		g_pData->800, // StartEnergy
+		g_pData-> m_MaxAmmo, // StartEnergy
 		LaserHit);
 
 	GameWorld()->CreateSound(Character()->m_Pos, SOUND_LASER_FIRE);
