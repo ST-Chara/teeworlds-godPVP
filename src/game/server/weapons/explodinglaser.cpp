@@ -30,5 +30,5 @@ void CExplodingLaser::Fire(vec2 Direction)
 		CExplodingLaser::LaserHit,
 		CustomData);
 
-	GameWorld()->CreateSound(Character()->m_Pos, SOUND_LASER_FIRE);
+	GameWorld()->CreateSound(Character()->m_Pos, SOUND_GRENADE_FIRE);
 }
