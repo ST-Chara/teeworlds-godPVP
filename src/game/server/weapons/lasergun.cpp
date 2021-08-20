@@ -39,5 +39,4 @@ void CLaserGun::Fire(vec2 Direction)
 		g_pData-> m_Weapons.m_Laser.m_Reach, // StartEnergy
 		LaserHit);
 
-	GameWorld()->CreateSound(Character()->m_Pos, SOUND_GRENADE_FIRE);
 }
