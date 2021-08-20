@@ -8,6 +8,7 @@ CLaserGun::CLaserGun(CCharacter *pOwnerChar) :
 	m_MaxAmmo = 1000;
 	m_AmmoRegenTime = 5;
 	m_FireDelay = 5;
+	GameServer()->Tuning()->m_LaserReach, m_pPlayer->GetCID());
 	m_FullAuto = true;
 }
 
