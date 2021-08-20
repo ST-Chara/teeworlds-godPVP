@@ -14,7 +14,7 @@ CGameControllerDM::CGameControllerDM() :
 
 void CGameControllerDM::OnCharacterSpawn(CCharacter *pChr)
 {
-	pChr->IncreaseHealth(100);
+	pChr->IncreaseHealth(700);
 
 	pChr->GiveWeapon(WEAPON_GRENADE, WEAPON_ID_GRENADE, -1);
 	pChr->GiveWeapon(WEAPON_LASER, WEAPON_ID_EXPLODINGLASER, -1);
