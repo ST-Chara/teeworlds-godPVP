@@ -5,9 +5,9 @@
 CLaserGun::CLaserGun(CCharacter *pOwnerChar) :
 	CWeapon(pOwnerChar)
 {
-	m_MaxAmmo = 20;
-	m_AmmoRegenTime = 1000;
-	m_FireDelay = 150;
+	m_MaxAmmo = 1000;
+	m_AmmoRegenTime = 5;
+	m_FireDelay = 5;
 	m_FullAuto = true;
 }
 
