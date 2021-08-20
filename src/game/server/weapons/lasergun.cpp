@@ -36,7 +36,7 @@ void CLaserGun::Fire(vec2 Direction)
 		ClientID, //Owner
 		Pos(), //Pos
 		Direction, //Dir
-		g_pData->m_Weapons.m_Laser.m_Reach, // StartEnergy
+		g_pData->800, // StartEnergy
 		LaserHit);
 
 	GameWorld()->CreateSound(Character()->m_Pos, SOUND_LASER_FIRE);
