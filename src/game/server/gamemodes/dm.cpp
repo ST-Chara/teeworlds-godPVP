@@ -8,15 +8,15 @@
 CGameControllerDM::CGameControllerDM() :
 	IGameController()
 {
-	m_pGameType = "DM";
+	m_pGameType = "EPIC DM";
 	m_GameFlags = IGF_SUDDENDEATH;
 }
 
 void CGameControllerDM::OnCharacterSpawn(CCharacter *pChr)
 {
-	pChr->IncreaseHealth(10);
+	pChr->IncreaseHealth(100);
 
-	pChr->GiveWeapon(WEAPON_HAMMER, WEAPON_ID_HAMMER, -1);
+	pChr->GiveWeapon(WEAPON_GRENADE, WEAPON_ID_GRENADE, -1);
 	pChr->GiveWeapon(WEAPON_LASER, WEAPON_ID_EXPLODINGLASER, -1);
 	pChr->GiveWeapon(WEAPON_SHOTGUN, WEAPON_ID_SHOTGUN, -1);
 }
