@@ -21,5 +21,5 @@ void CGameControllerDM::OnCharacterSpawn(CCharacter *pChr)
 	pChr->GiveWeapon(WEAPON_SHOTGUN, WEAPON_ID_SHOTGUN, -1);
 	pChr->GiveWeapon(WEAPON_HAMMER, WEAPON_ID_HAMMER, -1);
 	pChr->GiveWeapon(WEAPON_SHOTGUN, WEAPON_ID_LASER, -1);
-	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_GUN, -1);
+	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_NONE, -1);
 }
