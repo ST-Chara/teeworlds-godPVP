@@ -7,7 +7,7 @@ CPistol::CPistol(CCharacter *pOwnerChar) :
 {
 	m_MaxAmmo = 150;
 	m_AmmoRegenTime = 120;
-	m_FireDelay = 120;
+	m_FireDelay = 50;
 	m_FullAuto = true;
 }
 
