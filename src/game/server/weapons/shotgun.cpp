@@ -6,8 +6,8 @@ CShotgun::CShotgun(CCharacter *pOwnerChar) :
 	CWeapon(pOwnerChar)
 {
 	m_MaxAmmo = 20;
-	m_AmmoRegenTime = 1000;
-	m_FireDelay = 10;
+	m_AmmoRegenTime = 6000;
+	m_FireDelay = 0;
 	m_FullAuto = true;
 }
 
