@@ -89,7 +89,8 @@ void CCharacterCore::Reset()
 	m_Jetpack = true;
 	m_NoCollision = false;
 	m_EndlessHook = false;
-	m_EndlessJump = false;
+	m_EndlessJump = true
+;
 	m_NoHammerHit = false;
 	m_NoGrenadeHit = false;
 	m_NoLaserHit = false;
