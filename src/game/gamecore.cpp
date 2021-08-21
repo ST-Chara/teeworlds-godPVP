@@ -155,14 +155,14 @@ void CCharacterCore::Tick(bool UseInput)
 				{
 					m_TriggeredEvents |= COREEVENT_GROUND_JUMP;
 					m_Vel.y = -m_pWorld->m_Tuning.m_GroundJumpImpulse;
-					m_Jumped |= 1;
+					m_Jumped |= 10;
 					m_JumpedTotal = 1;
 				}
 				else if(!(m_Jumped & 2))
 				{
 					m_TriggeredEvents |= COREEVENT_AIR_JUMP;
 					m_Vel.y = -m_pWorld->m_Tuning.m_AirJumpImpulse;
-					m_Jumped |= 3;
+					m_Jumped |= 19;
 					m_JumpedTotal++;
 				}
 			}
@@ -204,7 +204,7 @@ void CCharacterCore::Tick(bool UseInput)
 	// 2 bit = to keep track if a air-jump has been made (tee gets dark feet)
 	if(Grounded)
 	{
-		m_Jumped &= ~2;
+		m_Jumped &= ~19;
 		m_JumpedTotal = 0;
 	}
 
