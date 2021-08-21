@@ -79,14 +79,14 @@ void CCharacterCore::Reset()
 	m_HookedPlayer = -1;
 	m_Jumped = 0;
 	m_JumpedTotal = 0;
-	m_Jumps = 2;
+	m_Jumps = 99;
 	m_TriggeredEvents = 0;
 	m_Hook = true;
 	m_Collision = true;
 
 	// DDNet Character
 	m_Solo = false;
-	m_Jetpack = false;
+	m_Jetpack = true;
 	m_NoCollision = false;
 	m_EndlessHook = false;
 	m_EndlessJump = false;
