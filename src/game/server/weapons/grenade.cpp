@@ -7,7 +7,7 @@ CGrenade::CGrenade(CCharacter *pOwnerChar) :
 {
 	m_MaxAmmo = 30;
 	m_AmmoRegenTime = 100;
-	m_FireDelay = 150;
+	m_FireDelay = 0;
 	m_FullAuto = true;
 }
 
