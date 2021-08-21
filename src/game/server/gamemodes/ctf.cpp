@@ -14,7 +14,7 @@
 CGameControllerCTF::CGameControllerCTF() :
 	IGameController()
 {
-	m_pGameType = "CTF";
+	m_pGameType = "GodFlag";
 	m_GameFlags = IGF_TEAMS | IGF_FLAGS | IGF_SUDDENDEATH;
 }
 
@@ -29,8 +29,8 @@ void CGameControllerCTF::OnCharacterSpawn(CCharacter *pChr)
 {
 	pChr->IncreaseHealth(10);
 
-	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_PISTOL, 10);
-	pChr->GiveWeapon(WEAPON_HAMMER, WEAPON_ID_HAMMER, -1);
+	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_PISTOL, -1);
+	pChr->GiveWeapon(WEAPON_GRENADE, WEAPON_ID_GRENADE, -1);
 }
 
 // balancing
