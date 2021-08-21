@@ -11,7 +11,7 @@
 CGameControllerLTS::CGameControllerLTS() :
 	IGameController()
 {
-	m_pGameType = "LTS";
+	m_pGameType = "LostGod";
 	m_GameFlags = IGF_TEAMS | IGF_SURVIVAL | IGF_ROUND_TIMER_ROUND;
 
 	INSTANCE_CONFIG_INT(&m_SpawnArmor, "spawn_armor", 5, 0, 10, CFGFLAG_CHAT | CFGFLAG_INSTANCE, "Maximum room size (from 2 to 64)")
@@ -20,8 +20,8 @@ CGameControllerLTS::CGameControllerLTS() :
 // event
 void CGameControllerLTS::OnCharacterSpawn(class CCharacter *pChr)
 {
-	pChr->IncreaseHealth(10);
-	pChr->IncreaseArmor(m_SpawnArmor);
+	pChr->IncreaseHealth(50);
+	pChr->IncreaseArmor(20);
 
 	// give start equipment
 	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_PISTOL, 10);
