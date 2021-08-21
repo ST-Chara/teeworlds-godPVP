@@ -11,7 +11,7 @@
 CGameControllerTDM::CGameControllerTDM() :
 	IGameController()
 {
-	m_pGameType = "TDM";
+	m_pGameType = "G2G";
 	m_GameFlags = IGF_TEAMS | IGF_SUDDENDEATH;
 
 	INSTANCE_CONFIG_INT(&m_RespawnDelayTDM, "respawn_delay", 3, 0, 10, CFGFLAG_CHAT | CFGFLAG_INSTANCE, "Time needed to respawn after death in tdm gametype")
@@ -20,7 +20,7 @@ CGameControllerTDM::CGameControllerTDM() :
 // event
 void CGameControllerTDM::OnCharacterSpawn(CCharacter *pChr)
 {
-	pChr->IncreaseHealth(10);
+	pChr->IncreaseHealth(500);
 
 	pChr->GiveWeapon(WEAPON_GUN, WEAPON_ID_PISTOL, 10);
 	pChr->GiveWeapon(WEAPON_HAMMER, WEAPON_ID_HAMMER, -1);
